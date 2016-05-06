@@ -1,0 +1,39 @@
+header{
+	
+	background-color: #1A998C;
+	color: white;
+}
+h1{
+	font-weight: bolder;
+}
+
+.input-section{
+
+	background-color: #E5E5E5;
+	padding: 5%;
+}
+
+.tareas-section{
+
+}
+
+li{
+	list-style: none;
+}
+.div-add{
+	width: 80%;
+	align-content: center;
+	background-color: #1A998C;
+	color: white;
+	margin: 1%;
+	border-radius: 10px;
+	padding: 2%;
+	
+}
+input[type="texte"].error{
+	border: #EE4242 4px solid;
+	width: 100%;
+	color: #FA8667;
+	padding: 1%;
+}
+

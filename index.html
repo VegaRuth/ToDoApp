@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TODO Application</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+	    <!--Font awesome source-->
+	    <link  rel= "stylesheet"  href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
+	    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+	    <![endif]-->       
+	    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<center>
+						<h1>
+							To Do App
+						</h1>
+						</center>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="input-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<form>
+						  <div class="form-group" action="">
+						    <textarea type="text" class="form-control" id="Input-Tarea" placeholder="Añade tu nueva tarea"></textarea>
+						  </div>
+						  
+						  <button type="button" class="btn btn-primary pull-right" id="Btn-Agregar">
+						  <span class="glyphicon glyphicon-plus-sign" aria-hiden="true"></span> Añadir tarea</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tareas-section">
+			<div class="container">
+				<div class="row">
+					<div col-xs-12>
+					<ul class="" id="Lista">
+						<li>
+							<div class="row div-add">
+								<div class="col-xs-1">
+								  <label>
+								    <input type="checkbox" value="">
+								  </label>
+								</div>
+								<div class="col-xs-10">
+									Primer Tarea!
+								</div>
+								<div class="col-xs-1">
+									<i class="fa fa-trash" aria-hidden="true"></i>
+								</div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
