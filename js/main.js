@@ -6,7 +6,7 @@
 	//funciones
 	var agregarTarea=function(){
 		var tarea=tareaInput.value;
-		var nuevaTarea=document.createElement("li");
+		var nuevaTarea=document.createElement("li","div", "checkbox");
 		var enlace=document.createElement("a");
 		var contenido= document.createTextNode(tarea);
 		
@@ -15,14 +15,18 @@
 			tareaInput.className = "error";
 			return false;
 		}
+		//crea li
 		enlace.appendChild(contenido);
+		//crea a
 		enlace.setAttribute("href", "#");
-		
+		//crea contenido de a
 		nuevaTarea.appendChild(enlace);
+		//antes del resultado de  input
 		enlace.insertAdjacentHTML('Beforebegin','<label><input type="checkbox" value=""></label>');
+		//despues del resultado de input
 		enlace.insertAdjacentHTML('afterend','<i class="fa fa-trash fa-1x" aria-hidden="true"></i>');
+		//agregar a lista
 		lista.appendChild(nuevaTarea);
-
 
 		for (var i = 0; i <= lista.children.length -1; i++) {
             lista.children[i].addEventListener("click", function(){
@@ -32,8 +36,8 @@
 	};
 	//Regresar el input del error
 	var comprobarInput=function(){
-	tarea.className = "";
-        tearea.setAttribute("placeholder", "Añade tu nueva tarea");
+		tarea.className= "";
+        tarea.setAttribute("placeholder", "Añade tu nueva tarea");
 	};
 	var eliminarTarea=function(){
 		 this.parentNode.removeChild(this);
